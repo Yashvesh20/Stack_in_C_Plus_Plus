@@ -26,19 +26,52 @@ Through a Single code the operations on stack such as push and pop were seen in 
 
 Algorithm: Stack using Array
 
-1. Start
-2. Initialize an array `arr[SIZE]` and a variable `top = -1`.
-3. Push Operation (Insert):
-     If `top == SIZE - 1`, display "Stack Overflow".
-     Else increment `top` by 1 and insert the new element at `arr[top]`.
-4. Pop Operation (Delete):
+1.Start the program.
 
-   * If `top == -1`, display "Stack Underflow".
-   * Else print the element at `arr[top]` and decrement `top` by 1.
-5. Perform multiple `push` operations and check overflow condition.
-6. Perform multiple `pop` operations and check underflow condition.
-7. Print the contents of the array.
-8. End
+2.Define constants and variables:
+
+    Set SIZE = 5 for the maximum size of the stack.
+
+    Declare an integer array arr[SIZE] to store stack elements.
+
+    Set top = -1 to show that the stack is empty.
+
+3.Start Push Process (Repeat 6 times):
+
+    Ask the user to enter a value to push onto the stack.
+
+    Read the value into a variable, say inputVal.
+
+    Check if the stack is full (i.e., top == SIZE - 1):
+
+    If yes, display "Stack Overflow".
+
+    If no:
+
+    Increase top by 1 (top++).
+
+    Store inputVal in arr[top].
+
+    Display a message: "Pushed: <value>".
+
+4.Start Pop Process (Repeat 6 times):
+
+    Check if the stack is empty (i.e., top == -1):
+
+    If yes, display "Stack Underflow".
+
+    If no:
+
+    Display the top value: "Popped: arr[top]".
+
+    Decrease top by 1 (top--).
+
+5.Display Array Content:
+
+    Print all elements of the array arr[0] to arr[SIZE - 1] (for visualization).
+
+6.End the program.
+
 
 # Conclusion:
 The above code demonstrated stack implementaion in C++.
